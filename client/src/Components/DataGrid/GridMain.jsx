@@ -72,7 +72,7 @@ const GridMain = (props) => {
     axios.get('http://localhost:5000/leadsData/')
       .then(res => {
         console.log(res.data.leadsData);
-        setLeads(res.data.leadsData)
+        setLeads(()=>res.data.leadsData);
       }).catch(err => console.log(err))
   }, [])
 

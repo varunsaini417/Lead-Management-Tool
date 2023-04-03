@@ -34,7 +34,6 @@ const checkuser = (req,res,next)=>{
                 // console.log(decodeToken);
                 let user = await userRegistered.findById(decodeToken.id)
                 res.status(200).json({isUser: true})
-                
                 next()
             }
         })

@@ -88,9 +88,9 @@ const AddDialog = (props) => {
           alert(error= err.response.data.errors.leadName)
         }
         
-      })
-      window.location.reload(true);
+      })      
       handleClose();
+      window.location.reload();
   }
 
   return (
